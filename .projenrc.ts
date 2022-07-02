@@ -7,6 +7,8 @@ const project = new cdk.JsiiProject({
   projenrcTs: true,
   repositoryUrl: 'https://github.com/marcioadev/pj-jsii-tests.git',
 
+  release: true,
+
   pullRequestTemplateContents: [
     '---',
     'By submitting this pull request, I confirm that my contribution is made under the terms of the Apache 2.0 license.',
