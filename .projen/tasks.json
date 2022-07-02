@@ -163,6 +163,9 @@
       "steps": [
         {
           "spawn": "docgen"
+        },
+        {
+          "spawn": "readme-macros"
         }
       ]
     },
@@ -173,6 +176,20 @@
     "pre-compile": {
       "name": "pre-compile",
       "description": "Prepare the project for compilation"
+    },
+    "readme-macros": {
+      "name": "readme-macros",
+      "steps": [
+        {
+          "exec": "mv README.md README.md.bak"
+        },
+        {
+          "exec": "cat README.md.bak | markmac > README.md"
+        },
+        {
+          "exec": "rm README.md.bak"
+        }
+      ]
     },
     "release": {
       "name": "release",
@@ -255,25 +272,25 @@
           "exec": "yarn upgrade npm-check-updates"
         },
         {
-          "exec": "npm-check-updates --dep dev --upgrade --target=minor"
+          "exec": "npm-check-updates --dep dev --upgrade --target=minor --reject='@types/jest,markmac'"
         },
         {
-          "exec": "npm-check-updates --dep optional --upgrade --target=minor"
+          "exec": "npm-check-updates --dep optional --upgrade --target=minor --reject='@types/jest,markmac'"
         },
         {
-          "exec": "npm-check-updates --dep peer --upgrade --target=minor"
+          "exec": "npm-check-updates --dep peer --upgrade --target=minor --reject='@types/jest,markmac'"
         },
         {
-          "exec": "npm-check-updates --dep prod --upgrade --target=minor"
+          "exec": "npm-check-updates --dep prod --upgrade --target=minor --reject='@types/jest,markmac'"
         },
         {
-          "exec": "npm-check-updates --dep bundle --upgrade --target=minor"
+          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --reject='@types/jest,markmac'"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade"
+          "exec": "yarn upgrade @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit jsii jsii-diff jsii-docgen jsii-pacmak json-schema npm-check-updates projen standard-version ts-jest ts-node typescript @types/jest"
         },
         {
           "exec": "npx projen"
