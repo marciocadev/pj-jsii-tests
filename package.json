@@ -48,7 +48,7 @@
     "jest-junit": "^13",
     "jsii": "^1.61.0",
     "jsii-diff": "^1.61.0",
-    "jsii-docgen": "^7.0.43",
+    "jsii-docgen": "^7.0.44",
     "jsii-pacmak": "^1.61.0",
     "json-schema": "^0.4.0",
     "markmac": "^0.1.297",
@@ -60,10 +60,12 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@types/jest": "27.4.1"
+    "@types/jest": "27.4.1",
+    "full-git-history": "^1.2.4"
   },
   "bundledDependencies": [
-    "@types/jest"
+    "@types/jest",
+    "full-git-history"
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",

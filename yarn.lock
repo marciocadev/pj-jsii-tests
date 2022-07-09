@@ -2466,6 +2466,11 @@ fsevents@^2.3.2:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
+full-git-history@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/full-git-history/-/full-git-history-1.2.4.tgz#7fc0937c745556b579b00142d3aa988b83ffd312"
+  integrity sha512-q6WfxhNG3tp2Ns4y44pd4kF+9pC6OTZv8kq4eLV2YyDdETWi1ACVXVKrOHd3WdbUB1qmo1xbPjuP97hm+nXSuQ==
+
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
@@ -3634,10 +3639,10 @@ jsii-diff@^1.61.0:
     log4js "^6.5.2"
     yargs "^16.2.0"
 
-jsii-docgen@^7.0.43:
-  version "7.0.43"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.43.tgz#1134501f5a7aa7f7cd302ae34fdf18e95c0b0039"
-  integrity sha512-SF6aL9B3c5/QKCNQLENZtPLGGSrN6VfwLQht68ELHoWVwhQpjFdXBQhG4rgnLxkLfyv/TcL9gjD3Q255GYaCfg==
+jsii-docgen@^7.0.44:
+  version "7.0.44"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.44.tgz#05dcbb06a0acc4ac562863bc970fd704d65f9ea7"
+  integrity sha512-+4v++U/Ypr/r/hKsVDND6BlO+I4id6/9SaXBzGVjAJYRAm8tfg+6hr+ByBCnKSZ/EqEglVFuF9KH7gUsxWVXYQ==
   dependencies:
     "@jsii/spec" "^1.61.0"
     case "^1.6.3"

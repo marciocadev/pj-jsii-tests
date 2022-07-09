@@ -14,7 +14,7 @@ const project = new cdk.JsiiProject({
     'By submitting this pull request, I confirm that my contribution is made under the terms of the Apache 2.0 license.',
   ],
 
-  bundledDeps: ['@types/jest@27.4.1'],
+  bundledDeps: ['@types/jest@27.4.1', 'full-git-history'],
   devDeps: ['markmac'],
   depsUpgradeOptions: {
     // markmac depends on projen, we are excluding it here to avoid a circular update loop

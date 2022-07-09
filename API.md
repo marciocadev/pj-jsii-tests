@@ -1,39 +1,88 @@
 # API Reference <a name="API Reference" id="api-reference"></a>
 
 
+## Structs <a name="Structs" id="Structs"></a>
+
+### BaseProjectOptions <a name="BaseProjectOptions" id="pj-jsii-tests.BaseProjectOptions"></a>
+
+Options for BaseProject.
+
+#### Initializer <a name="Initializer" id="pj-jsii-tests.BaseProjectOptions.Initializer"></a>
+
+```typescript
+import { BaseProjectOptions } from 'pj-jsii-tests'
+
+const baseProjectOptions: BaseProjectOptions = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#pj-jsii-tests.BaseProjectOptions.property.name">name</a></code> | <code>string</code> | something. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="pj-jsii-tests.BaseProjectOptions.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+- *Default:* whatever
+
+something.
+
+---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### Hello <a name="Hello" id="pj-jsii-tests.Hello"></a>
+### BaseProject <a name="BaseProject" id="pj-jsii-tests.BaseProject"></a>
 
-#### Initializers <a name="Initializers" id="pj-jsii-tests.Hello.Initializer"></a>
+Base Project.
+
+#### Initializers <a name="Initializers" id="pj-jsii-tests.BaseProject.Initializer"></a>
 
 ```typescript
-import { Hello } from 'pj-jsii-tests'
+import { BaseProject } from 'pj-jsii-tests'
 
-new Hello()
+new BaseProject(options: BaseProjectOptions)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#pj-jsii-tests.BaseProject.Initializer.parameter.options">options</a></code> | <code><a href="#pj-jsii-tests.BaseProjectOptions">BaseProjectOptions</a></code> | *No description.* |
 
 ---
 
-#### Methods <a name="Methods" id="Methods"></a>
+##### `options`<sup>Required</sup> <a name="options" id="pj-jsii-tests.BaseProject.Initializer.parameter.options"></a>
 
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#pj-jsii-tests.Hello.sayHello">sayHello</a></code> | *No description.* |
+- *Type:* <a href="#pj-jsii-tests.BaseProjectOptions">BaseProjectOptions</a>
 
 ---
 
-##### `sayHello` <a name="sayHello" id="pj-jsii-tests.Hello.sayHello"></a>
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#pj-jsii-tests.BaseProject.property.name">name</a></code> | <code>string</code> | Project name. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="pj-jsii-tests.BaseProject.property.name"></a>
 
 ```typescript
-public sayHello(): string
+public readonly name: string;
 ```
 
+- *Type:* string
 
+Project name.
+
+---
 
 
 
